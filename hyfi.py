@@ -19,7 +19,7 @@ def load_user_rules(filepath: str) -> Dict[str, str]:
         for li, line in enumerate(f):
             p = line.split()
             if len(p) != 2:
-                exit("Error: line {li+1}: invalid user rule: {line}")
+                exit(f"Error: line {li+1}: invalid user rule: {line}")
             k, v = p
             d[k] = v
         return d
