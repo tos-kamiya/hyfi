@@ -35,12 +35,12 @@ The general usage of HyFi's CLI is as follows. The CLI accepts options and argum
 ### Basic CLI usage
 
 ```
-hyfi.py [-h] [-o OUTPUT] [-u UNRECOGNIZED_PAIRS] [-r REPLACEMENT_RULES] [INPUT]
+hyfi.py [-h] [-o OUTPUT] [-u UNRECOGNIZED_PAIRS] [-r REPLACEMENT_RULES] INPUT
 ```
 
 **Arguments**
 
-INPUT: The text file to process. If not specified, input is taken from stdin.
+INPUT: The text file to process or "-" to take input from stdin.
 
 **Options**
 
