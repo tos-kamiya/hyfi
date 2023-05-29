@@ -56,7 +56,7 @@ INPUT: The text file to process. If not specified, input is taken from stdin.
 In this usage scenario, words that would issue warnings are ignored.
 
 ```bash
-$ hyfi input.txt -o output.txt
+$ hyfi.py input.txt -o output.txt
 ```
 
 This command reads from the input.txt file, corrects hyphenated end-words and writes the output to output.txt.
@@ -65,13 +65,13 @@ Save unrecognized words and use them as custom rules
 In this usage scenario, unrecognized words are saved and then edited by the user to create a set of custom rules.
 
 ```bash
-$ hyfi input.txt -o output.txt -u unrecognized.txt
+$ hyfi.py input.txt -o output.txt -u unrecognized.txt
 ```
 
 This command saves the unrecognized words and their potential correction to unrecognized.txt. After this, the user manually edits the unrecognized.txt file to remove unwanted entries.
 
 ```bash
-$ hyfi input.txt -o output.txt -r unrecognized.txt
+$ hyfi.py input.txt -o output.txt -r unrecognized.txt
 ```
 
 This command uses the user-edited unrecognized.txt as a set of custom rules. With these rules, the command corrects hyphenated end-words while taking into account the user's edits.
