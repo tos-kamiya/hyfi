@@ -60,7 +60,8 @@ $ hyfi.py input.txt -o output.txt
 ```
 
 This command reads from the input.txt file, corrects hyphenated end-words and writes the output to output.txt.
-Save unrecognized words and use them as custom rules
+
+**Save unrecognized words and use them as custom rules**
 
 In this usage scenario, unrecognized words are saved and then edited by the user to create a set of custom rules.
 
