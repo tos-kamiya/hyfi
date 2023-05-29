@@ -3,10 +3,10 @@
 import argparse
 import re
 import sys
-from typing import Dict, Iterator, List, Optional, Set, Tuple
+from typing import Dict, FrozenSet, Iterator, List, Optional, Tuple
 
 
-def load_words(file_path: str) -> Set[str]:
+def load_words(file_path: str) -> FrozenSet[str]:
     with open(file_path, "r") as f:
         words = frozenset(word.strip() for word in f)
     return words
@@ -53,7 +53,7 @@ def generate_word_variants(word: str) -> List[str]:
 
 def process_lines(
     line_it: Iterator[str],
-    english_words: Set[str],
+    english_words: FrozenSet[str],
     user_rules: Dict[str, str] = {},
     unrecognized_pairs_sink: Optional[List[Tuple[str, str]]] = None,
 ) -> Iterator[str]:
